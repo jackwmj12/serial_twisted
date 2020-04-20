@@ -37,7 +37,7 @@ base_dir = os.getcwd()
 #     log.startLoggingWithObserver(logger.emit, setStdout=False)
 
 if __name__ == '__main__':
-    port = SerialPort(SerialProtocol(None), 'COM5', reactor, baudrate=115200)
+    port = SerialPort(SerialProtocol(None), 'COM11', reactor, baudrate=115200)
     
     # reactor.callLater(10, reactor.stop)
     reactor.run()
